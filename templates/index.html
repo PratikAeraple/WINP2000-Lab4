@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Go Web Server Group Assignment - Group H">
+    <title>Go Web Server Assignment - Group H</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('https://source.unsplash.com/1600x900/?technology,cloud') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .hero .cta-btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            background: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .hero .cta-btn:hover {
+            background: #087f23;
+        }
+
+        nav {
+            background: #4CAF50;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e8f5e9;
+        }
+
+        main {
+            margin: 2rem auto;
+            padding: 2rem;
+            max-width: 1200px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        main h2 {
+            color: #4CAF50;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        main p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        main ul {
+            list-style: none;
+            margin: 1rem 0;
+            padding: 0;
+        }
+
+        main ul li {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        main ul li:before {
+            content: "✔";
+            color: #4CAF50;
+            position: absolute;
+            left: 0;
+        }
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            background: #f4f4f4;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(30% - 2rem);
+            max-width: 30%;
+            text-align: center;
+        }
+
+        .team-member h3 {
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            background: #4CAF50;
+            color: #fff;
+            font-size: 1rem;
+            box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                margin: 0 1rem;
+                font-size: 1rem;
+            }
+
+            .team-member {
+                flex: 1 1 calc(100% - 2rem);
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .hero .cta-btn {
+                padding: 0.6rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Group H</h1>
+            <p>Your journey into the world of Go Web Servers begins here. Explore our professional project to serve static files securely and efficiently.</p>
+            <a href="#features" class="cta-btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/team.html">Team</a>
+        <a href="/contact.html">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="features">
+        <h2>Welcome!</h2>
+        <p>This is the homepage of our Go Web Server Group Assignment. The web server is designed to demonstrate the ability to serve static files efficiently and securely using the Go programming language.</p>
+
+        <h2>Project Features</h2>
+        <ul>
+            <li>Serves static HTML, CSS, and JavaScript files.</li>
+            <li>Handles missing or invalid file requests gracefully.</li>
+            <li>Built-in MIME type support for various file types.</li>
+        </ul>
+
+        <h2>Team Members</h2>
+        <div class="team">
+            <div class="team-member">
+                <h3>Pratik Aeraple</h3>
+                <p>ID: 500225908</p>
+            </div>
+            <div class="team-member">
+                <h3>Rahul Pawar</h3>
+                <p>ID: 500227231</p>
+            </div>
+            <div class="team-member">
+                <h3>Siddharth Dalal</h3>
+                <p>ID: 500228518</p>
+            </div>
+            <div class="team-member">
+                <h3>Rahul .</h3>
+                <p>ID: 5002259</p>
+            </div>
+            <div class="team-member">
+                <h3>Amaan Ali Mohammed</h3>
+                <p>ID: 50022</p>
+            </div>
+        </div>
+
+        <h2>Professor</h2>
+        <p><strong>Maziar Sojoudian</strong></p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Group H - Go Web Server Assignment. Built with ❤ by <a href="#">Group H</a>.</p>
+    </footer>
+</body>
+</html>

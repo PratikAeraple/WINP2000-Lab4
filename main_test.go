@@ -14,7 +14,7 @@ func TestFileServer(t *testing.T) {
 	if err != nil {
 		t.Fatalf("Failed to create static directory: %v", err)
 	}
-	defer os.RemoveAll(staticDir) // Clean up after the test
+	defer os.RemoveAll(staticDir)
 
 	// Add a sample file to the directory
 	fileName := "index.html"
